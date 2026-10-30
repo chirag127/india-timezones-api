@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "India Time Zones",
+    "description": "IST timezone reference with state-wise local offsets",
+    "version": "1.0.0",
+    "license": {
+      "name": "public-domain"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/india-timezones",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "India Time Zones data",
+        "description": "IST timezone reference with state-wise local offsets",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/timezones": {
+      "get": {
+        "summary": "India Time Zones",
+        "description": "IST timezone reference with state-wise local offsets",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
